@@ -1,0 +1,31 @@
+11:26:46 **** Incremental Build of configuration Debug for project Lab02_sensori_temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o"
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o"
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.h:28,
+                 from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.h:28,
+                 from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:22: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:22: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+11:26:47 Build Failed. 7 errors, 0 warnings. (took 421ms)
+

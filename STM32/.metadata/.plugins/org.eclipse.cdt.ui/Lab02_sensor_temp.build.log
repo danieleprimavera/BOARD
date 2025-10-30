@@ -1,0 +1,189 @@
+12:14:39 **** Incremental Build of configuration Debug for project Lab02_sensor_temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o"
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o"
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.o"
+arm-none-eabi-gcc "../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.d" -MT"Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o"
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.h:28,
+                 from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.h:28,
+                 from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.h:28,
+                 from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+In file included from ../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:20:
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:233:48: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  233 | void             BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.h:234:50: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  234 | void             BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  EXTI_HandleTypeDef
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:28: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:28: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.o] Error 1
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:28: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o] Error 1
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:82:1: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   82 | I2C_HandleTypeDef hI2cHandler;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:83:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   83 | UART_HandleTypeDef hDiscoUart;
+      | ^~~~~~~~~~~~~~~~~~
+      | EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:91:30: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   91 | static void     I2Cx_MspInit(I2C_HandleTypeDef *i2c_handler);
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:92:32: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   92 | static void     I2Cx_MspDeInit(I2C_HandleTypeDef *i2c_handler);
+      |                                ^~~~~~~~~~~~~~~~~
+      |                                DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:93:27: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   93 | static void     I2Cx_Init(I2C_HandleTypeDef *i2c_handler);
+      |                           ^~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:94:29: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   94 | static void     I2Cx_DeInit(I2C_HandleTypeDef *i2c_handler);
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:95:44: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   95 | static HAL_StatusTypeDef I2Cx_ReadMultiple(I2C_HandleTypeDef *i2c_handler, uint8_t Addr, uint16_t Reg, uint16_t MemAddSize, uint8_t *Buffer, uint16_t Length);
+      |                                            ^~~~~~~~~~~~~~~~~
+      |                                            DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:96:45: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   96 | static HAL_StatusTypeDef I2Cx_WriteMultiple(I2C_HandleTypeDef *i2c_handler, uint8_t Addr, uint16_t Reg, uint16_t MemAddSize, uint8_t *Buffer, uint16_t Length);
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:97:45: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   97 | static HAL_StatusTypeDef I2Cx_IsDeviceReady(I2C_HandleTypeDef *i2c_handler, uint16_t DevAddress, uint32_t Trials);
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:98:37: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   98 | static void              I2Cx_Error(I2C_HandleTypeDef *i2c_handler, uint8_t Addr);
+      |                                     ^~~~~~~~~~~~~~~~~
+      |                                     DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:289:36: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  289 | void BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:327:38: error: unknown type name 'UART_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  327 | void BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      EXTI_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:354:26: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  354 | static void I2Cx_MspInit(I2C_HandleTypeDef *i2c_handler)
+      |                          ^~~~~~~~~~~~~~~~~
+      |                          DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:396:28: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  396 | static void I2Cx_MspDeInit(I2C_HandleTypeDef *i2c_handler)
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:415:23: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  415 | static void I2Cx_Init(I2C_HandleTypeDef *i2c_handler)
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:440:25: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  440 | static void I2Cx_DeInit(I2C_HandleTypeDef *i2c_handler)
+      |                         ^~~~~~~~~~~~~~~~~
+      |                         DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:456:44: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  456 | static HAL_StatusTypeDef I2Cx_ReadMultiple(I2C_HandleTypeDef *i2c_handler, uint8_t Addr, uint16_t Reg, uint16_t MemAddress, uint8_t *Buffer, uint16_t Length)
+      |                                            ^~~~~~~~~~~~~~~~~
+      |                                            DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:482:45: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  482 | static HAL_StatusTypeDef I2Cx_WriteMultiple(I2C_HandleTypeDef *i2c_handler, uint8_t Addr, uint16_t Reg, uint16_t MemAddress, uint8_t *Buffer, uint16_t Length)
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:505:45: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  505 | static HAL_StatusTypeDef I2Cx_IsDeviceReady(I2C_HandleTypeDef *i2c_handler, uint16_t DevAddress, uint32_t Trials)
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:516:24: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  516 | static void I2Cx_Error(I2C_HandleTypeDef *i2c_handler, uint8_t Addr)
+      |                        ^~~~~~~~~~~~~~~~~
+      |                        DMA_HandleTypeDef
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_Init':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:540:3: warning: implicit declaration of function 'I2Cx_Init' [-Wimplicit-function-declaration]
+  540 |   I2Cx_Init(&hI2cHandler);
+      |   ^~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_DeInit':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:549:3: warning: implicit declaration of function 'I2Cx_DeInit' [-Wimplicit-function-declaration]
+  549 |   I2Cx_DeInit(&hI2cHandler);
+      |   ^~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_Write':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:561:3: warning: implicit declaration of function 'I2Cx_WriteMultiple'; did you mean 'NFC_IO_WriteMultiple'? [-Wimplicit-function-declaration]
+  561 |   I2Cx_WriteMultiple(&hI2cHandler, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT,(uint8_t*)&Value, 1);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   NFC_IO_WriteMultiple
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:561:57: error: 'I2C_MEMADD_SIZE_8BIT' undeclared (first use in this function)
+  561 |   I2Cx_WriteMultiple(&hI2cHandler, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT,(uint8_t*)&Value, 1);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:561:57: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_Read':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:574:3: warning: implicit declaration of function 'I2Cx_ReadMultiple'; did you mean 'NFC_IO_ReadMultiple'? [-Wimplicit-function-declaration]
+  574 |   I2Cx_ReadMultiple(&hI2cHandler, Addr, Reg, I2C_MEMADD_SIZE_8BIT, (uint8_t*)&read_value, 1);
+      |   ^~~~~~~~~~~~~~~~~
+      |   NFC_IO_ReadMultiple
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:574:46: error: 'I2C_MEMADD_SIZE_8BIT' undeclared (first use in this function)
+  574 |   I2Cx_ReadMultiple(&hI2cHandler, Addr, Reg, I2C_MEMADD_SIZE_8BIT, (uint8_t*)&read_value, 1);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_ReadMultiple':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:590:62: error: 'I2C_MEMADD_SIZE_8BIT' undeclared (first use in this function)
+  590 |  return I2Cx_ReadMultiple(&hI2cHandler, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT, Buffer, Length);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_WriteMultiple':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:604:57: error: 'I2C_MEMADD_SIZE_8BIT' undeclared (first use in this function)
+  604 |   I2Cx_WriteMultiple(&hI2cHandler, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT, Buffer, Length);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_IsDeviceReady':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:616:11: warning: implicit declaration of function 'I2Cx_IsDeviceReady'; did you mean 'NFC_IO_IsDeviceReady'? [-Wimplicit-function-declaration]
+  616 |   return (I2Cx_IsDeviceReady(&hI2cHandler, DevAddress, Trials));
+      |           ^~~~~~~~~~~~~~~~~~
+      |           NFC_IO_IsDeviceReady
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'NFC_IO_ReadMultiple':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:701:7: warning: implicit declaration of function 'HAL_I2C_Master_Receive' [-Wimplicit-function-declaration]
+  701 |   if( HAL_I2C_Master_Receive(&hI2cHandler, Addr, (uint8_t*)pBuffer, Length, NFC_I2C_TIMEOUT_STD) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'NFC_IO_WriteMultiple':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:727:7: warning: implicit declaration of function 'HAL_I2C_Master_Transmit' [-Wimplicit-function-declaration]
+  727 |   if( HAL_I2C_Master_Transmit(&hI2cHandler, Addr, (uint8_t*)pBuffer, Length, NFC_I2C_TIMEOUT_STD) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'NFC_IO_IsDeviceReady':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:753:18: warning: implicit declaration of function 'HAL_I2C_IsDeviceReady'; did you mean 'NFC_IO_IsDeviceReady'? [-Wimplicit-function-declaration]
+  753 |         status = HAL_I2C_IsDeviceReady(&hI2cHandler, Addr, Trials, NFC_I2C_TIMEOUT_STD);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  NFC_IO_IsDeviceReady
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c: In function 'SENSOR_IO_ReadMultiple':
+../Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c:591:1: warning: control reaches end of non-void function [-Wreturn-type]
+  591 | }
+      | ^
+make: *** [Drivers/BSP/B-L475E-IOT01/subdir.mk:28: Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+12:14:40 Build Failed. 37 errors, 9 warnings. (took 1s.22ms)
+

@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Lab01 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_fake Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Magnetometro,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ESAME_ELETTRONICA_2025 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EsameElettronica Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ESAME_ELETTRONICA_2025\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ESAME_ELETTRONICA_2025\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EsameElettronica\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Lab01\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Lab01\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Magnetometro/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_fake\ Debug/activeLaunchMode=run

@@ -1,0 +1,10 @@
+18:06:50 **** Build of configuration Debug for project PWM_fake ****
+make -j16 all 
+arm-none-eabi-size  PWM_fake.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6116	     12	   1572	   7700	   1e14	PWM_fake.elf
+Finished building: default.size.stdout
+ 
+
+18:06:51 Build Finished. 0 errors, 0 warnings. (took 194ms)
+
